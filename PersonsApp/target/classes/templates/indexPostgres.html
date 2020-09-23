@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Persons Table</title>
+
+</head>
+<body>
+    <div align="center" xmlns:th="http://www.w3.org/1999/xhtml">
+        <h1>Persons manager</h1>
+
+        <a href="/maria">Switch to MariaDB</a><br>
+
+        <a href="/new">Create New Person</a>
+        <br />
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="person : ${listPersons}">
+                    <td th:text="${person.personid}">ID</td>
+                    <td th:text="${person.firstName}">First Name</td>
+                    <td th:text="${person.lastName}">Last Name</td>
+                    <td th:text="${person.address}">Address</td>
+                    <td th:text="${person.city}">City</td>
+                    <td>
+                        <a th:href="@{'/editPG/' + ${person.personid}}">Edit</a>
+                        <a th:href="@{'/deletePG/' + ${person.personid}}">Delete</a>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

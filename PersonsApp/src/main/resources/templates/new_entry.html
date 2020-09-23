@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Create New Person</title>
+    <style>
+    .three-inline-buttons .button {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.three-inline-buttons {
+     display: table;
+     margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .three-inline-buttons .button{
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+
+}
+
+}
+    </style>
+</head>
+<body>
+<div align="center">
+    <h1>Insert New Person</h1>
+    <br />
+    <form action="#" th:action="@{/save}" th:object="${person}"
+          method="post" xmlns:th="http://www.w3.org/1999/xhtml">
+
+        <table border="0" cellpadding="10">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" th:field="*{firstName}" /></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" th:field="*{lastName}" /></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" th:field="*{address}" /></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" th:field="*{city}" /></td>
+            </tr>
+
+        </table>
+            <div class="three-inline-buttons">
+                <button class="button" type="submit" name="action" value="SaveInPostgres">Save PG</button>
+                <button class="button" type="submit" name="action" value="SaveInBoth">Save Both</button>
+                <button class="button" type="submit" name="action" value="SaveInMaria">Save MDB</button>
+            </div>
+
+    </form>
+</div>
+</body>
+</html>

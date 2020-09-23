@@ -1,0 +1,8 @@
+com/example/PersonApp/Model/Person.class
+com/example/PersonApp/Configuration/MariaDbConfiguration.class
+com/example/PersonApp/Repository/Postgres/PostgresPersonRepository.class
+com/example/PersonApp/Configuration/PostgresConfiguration.class
+com/example/PersonApp/Repository/Maria/MariaDbPersonRepository.class
+com/example/PersonApp/PersonApplication.class
+com/example/PersonApp/Service/PersonService.class
+com/example/PersonApp/Controller/PersonController.class

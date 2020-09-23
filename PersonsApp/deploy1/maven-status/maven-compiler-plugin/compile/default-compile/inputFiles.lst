@@ -1,0 +1,8 @@
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/PersonApplication.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Service/PersonService.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Repository/Postgres/PostgresPersonRepository.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Model/Person.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Configuration/PostgresConfiguration.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Repository/Maria/MariaDbPersonRepository.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Configuration/MariaDbConfiguration.java
+/home/dan_coras/first-project/PersonsApp/src/main/java/com/example/PersonApp/Controller/PersonController.java
